@@ -1,0 +1,480 @@
+# Build a Complete Startup-Ready MERN Stack Project
+
+## Project Name
+
+EcoRide Connect
+
+## Project Type
+
+Full Stack MERN Application (MongoDB, Express.js, React.js, Node.js)
+
+## Objective
+
+Build a production-ready EV (Electric Vehicle) ecosystem platform that helps EV users discover charging stations, battery swap stations, EV service centers, share reviews, interact with the EV community, and book charging slots.
+
+The application should feel like a real startup product, not a college project.
+
+---
+
+# Technical Requirements
+
+## Frontend
+
+* React.js
+* React Router DOM
+* Axios
+* Tailwind CSS
+* React Icons
+* Context API for state management
+* Responsive Design
+
+## Backend
+
+* Node.js
+* Express.js
+* JWT Authentication
+* bcrypt Password Hashing
+* REST APIs
+
+## Database
+
+* MongoDB Atlas
+* Mongoose ODM
+
+## Deployment Ready
+
+* Frontend deployable on Vercel
+* Backend deployable on Render
+* MongoDB Atlas integration
+* Environment Variables setup
+* Production-ready folder structure
+
+---
+
+# User Roles
+
+## User
+
+Regular EV owner
+
+## Admin
+
+Platform administrator
+
+---
+
+# Authentication Module
+
+### User Registration
+
+Fields:
+
+* Full Name
+* Email
+* Password
+* Confirm Password
+
+### Login
+
+* Email
+* Password
+
+### Features
+
+* JWT Authentication
+* Protected Routes
+* Persistent Login
+* Logout
+* Forgot Password Page UI
+* Update Profile
+
+---
+
+# Home Page
+
+Modern startup landing page with:
+
+### Hero Section
+
+Headline:
+"India's Smart EV Ecosystem Platform"
+
+Buttons:
+
+* Find Charging Stations
+* Join Community
+
+### Sections
+
+* Featured Charging Stations
+* EV Service Centers
+* Battery Swap Stations
+* Community Discussions
+* Statistics Section
+* Testimonials
+* Footer
+
+---
+
+# Charging Station Module
+
+Users can:
+
+### View Charging Stations
+
+Each station contains:
+
+* Name
+* Address
+* City
+* State
+* Contact Number
+* Charger Type
+* Available Slots
+* Charging Cost
+* Opening Hours
+* Description
+* Station Images
+
+### Features
+
+* Search by City
+* Search by Name
+* Filter by Charger Type
+* Filter by Availability
+* Sort by Cost
+
+### Station Details Page
+
+Display:
+
+* Full Details
+* Reviews
+* Ratings
+* Available Slots
+* Booking Option
+
+---
+
+# Charging Slot Booking System
+
+Users can:
+
+* Select Date
+* Select Time Slot
+* Confirm Booking
+
+Booking Status:
+
+* Pending
+* Approved
+* Completed
+* Cancelled
+
+User Dashboard should show:
+
+* Upcoming Bookings
+* Past Bookings
+
+---
+
+# Battery Swap Station Module
+
+Display:
+
+* Station Name
+* Location
+* Battery Types
+* Contact Information
+* Working Hours
+
+CRUD functionality for Admin.
+
+---
+
+# EV Service Center Module
+
+Display:
+
+* Service Center Name
+* Address
+* Contact Number
+* Services Offered
+* Ratings
+
+Users can review service centers.
+
+---
+
+# Review & Rating System
+
+Users can:
+
+* Add Reviews
+* Edit Reviews
+* Delete Reviews
+
+Rating:
+1 to 5 stars
+
+Calculate Average Rating Automatically.
+
+---
+
+# Community Forum
+
+Users can:
+
+### Create Posts
+
+Fields:
+
+* Title
+* Description
+
+### Features
+
+* Like Posts
+* Comment on Posts
+* Edit Own Posts
+* Delete Own Posts
+
+---
+
+# Blog Section
+
+Admin can:
+
+* Add Blog
+* Edit Blog
+* Delete Blog
+
+Categories:
+
+* EV News
+* Charging Tips
+* Government Policies
+* Battery Maintenance
+
+---
+
+# User Dashboard
+
+Display:
+
+### Statistics
+
+* Total Bookings
+* Reviews Submitted
+* Forum Posts Created
+
+### Sections
+
+* My Bookings
+* My Reviews
+* My Posts
+* Account Settings
+
+---
+
+# Admin Dashboard
+
+Professional Admin Panel
+
+Display:
+
+* Total Users
+* Total Charging Stations
+* Total Service Centers
+* Total Reviews
+* Total Bookings
+* Total Forum Posts
+
+Charts:
+
+* Monthly User Growth
+* Booking Analytics
+
+---
+
+# Admin Management Modules
+
+## User Management
+
+Admin can:
+
+* View Users
+* Delete Users
+* Block Users
+
+## Charging Station Management
+
+Admin can:
+
+* Add Station
+* Edit Station
+* Delete Station
+
+## Battery Station Management
+
+Admin can:
+
+* Add
+* Edit
+* Delete
+
+## Service Center Management
+
+Admin can:
+
+* Add
+* Edit
+* Delete
+
+## Review Moderation
+
+Admin can:
+
+* Delete Reviews
+* Manage Content
+
+---
+
+# Database Models
+
+## User
+
+* name
+* email
+* password
+* role
+* profileImage
+* createdAt
+
+## ChargingStation
+
+* name
+* address
+* city
+* state
+* contact
+* chargerType
+* chargingCost
+* availableSlots
+* description
+* images
+
+## Booking
+
+* user
+* station
+* bookingDate
+* bookingTime
+* status
+
+## Review
+
+* user
+* station
+* rating
+* comment
+
+## ServiceCenter
+
+* name
+* address
+* contact
+* services
+
+## BatteryStation
+
+* name
+* address
+* batteryType
+* contact
+
+## ForumPost
+
+* title
+* description
+* user
+* likes
+* comments
+
+## Blog
+
+* title
+* content
+* category
+* image
+
+---
+
+# UI Requirements
+
+Design should look like a funded startup product.
+
+Use:
+
+* Modern Dashboard
+* Professional Navbar
+* Sidebar Navigation
+* Responsive Cards
+* Smooth Animations
+* Dark Mode
+* Mobile Responsive Layout
+* Clean Typography
+
+Do not use basic bootstrap templates.
+
+Create a premium UI similar to modern SaaS products.
+
+---
+
+# Security
+
+* JWT Authentication
+* Password Hashing
+* Protected Routes
+* Role-Based Access Control
+* Input Validation
+* Error Handling
+
+---
+
+# Project Structure
+
+Generate complete folder structure for:
+
+Frontend
+Backend
+Controllers
+Routes
+Models
+Middleware
+Services
+Utilities
+
+---
+
+# Deliverables
+
+Generate:
+
+1. Complete MERN project
+2. Frontend code
+3. Backend code
+4. MongoDB schemas
+5. REST APIs
+6. Authentication system
+7. Admin dashboard
+8. User dashboard
+9. Booking system
+10. Review system
+11. Community forum
+12. Deployment guide
+13. README.md
+14. Environment variable setup
+15. Seed data for testing
+
+The final application should be fully functional, deployment-ready, production-ready, scalable, and suitable for startup competitions, internships, portfolio showcase, and live deployment on a custom domain.
